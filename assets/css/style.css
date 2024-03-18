@@ -10,8 +10,7 @@
 # General
 --------------------------------------------------------------*/
 .imagedefond {
-
-  background-image: url("/assets/img/Fond_Grenoble.png");
+  background-image: url("../../assets/img/Fond_Grenoble.png");
   background-color: grey;
   background-repeat: no-repeat;
   background-position: center
@@ -19,7 +18,7 @@
 
 .sommairedefond {
 
-  background-image: url("/assets/img/Fond_Sommaire.png");
+  background-image: url("../../assets/img/Fond_Sommaire.png");
   background-repeat: repeat;
   background-size: cover;
   background-position: center
