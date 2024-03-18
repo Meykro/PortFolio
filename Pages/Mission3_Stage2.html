@@ -123,33 +123,25 @@
             <img src="/assets/img/Carte_WifiPatient.png" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <h2>Installation et configuration d'un serveur Observium</h2> <br>
-            <h4>Besoin: Instalation d'un service de monitoring nommé Observium</h4> <br>
-            <h5>Problématique: L'ephad de Moirans n'a pas de système de monitoring</h5> <br>
+            <h2>Dépannage du Wifi Patient</h2> <br>
+            <h4>Besoin: Recherche de pannes sur les différents composants</h4> <br>
+            <h5>Problématique: Le Wifi pour les patients est tombé en panne</h5> <br>
             <ul>
               <h6>Réalisation: </h6>
               <p>
-                J'ai donc installé cette solution sur un serveur virtuel sous Ubuntu Server 22.04.<br> <br>
-                Observium se configure sur l'interface Web, pour communiquer avec les appareils,
-                il utilise le protocole SNMP <strong>(Simple Network Management Protocole)</strong> V1 qui est devenue
-                obseléte car il n'est plus assez sécurisé, V2 le V2c ou le V3. <br>
-                J'ai personnellement opté pour la version V3 car il faut un login et un MDP pour ajoutées une
-                machine sur Observium<br> <br>
-                Ensuite j'ai du rajouter chaque machines du réseaux Moirans. <br>
-                Pour finir j'ai configuré des alertes, cela permet qu'en cas de pannes ou arrêt impromptu nous soyons
-                prévenus. <br> <br>
-                J’ai rencontré <strong>deux difficultés majeures</strong> lors de cette activité. <br>
-                <strong>La première: </strong><br>
-                Les tutoriels pour configurer Observium sont souvent obselètes ou pas assez complets,
-                donc cela ajoute de la difficultée a la mise en service. <br>
-                <strong>La deuxième: </strong><br>
-                J'ai rencontré une erreur que je n’ai pu résoudre sans l’aide de mon maître de stage car aucune
-                solution ne fonctionnait sur Internet. <br>
-                Observium n’arrivait pas à récolter les données des différentes machines / équipements et donc
-                n'affichait aucune
-                donnée. <br>
-                Une fois l'outil monté avec les machines paramétrées j'ai établi une documentation expliquant la mise en
-                place et la configuration du serveur.
+                Le wifi patient a cessé de fonctionner en raison d'un dysfonctionnement, la matériel était un Hotspot
+                sans Fil N4100 de ZyXEL datant de 2014. <br>
+                Celui-ci permet le contrôle des accès au wifi patient, si une personne tierce n'a pas au préalablement
+                récupéré ces accès à l’accueil il n’a donc pas la possibilité de se connecter. <br>
+                Le Vlan qui est dédié qui lui est ne pas connecté au réseau de production, il est relié directement au contrôleur Wifi
+                pour transmettre le SSID du wifi patient.<br>
+                L'absence d'authentification a entraîné l'impossibilité pour les patients ou les visiteurs
+                d'accéder à Internet. <br><br>
+                Initialement, on a soupçonné un problème sur la carte électronique, mais après
+                vérification de l'alimentation et l'utilisation d'une méthode d'analyse ascendante, le problème a été
+                résolu en remplaçant l'alimentation défectueuse.<br>
+                Il est probable que le dysfonctionnement de l'ancienne alimentation soit lié à une usure des composants due à l'âge, 
+                probablement une protection ou un composant qui se serait mis en défaut, car il détectait une surcharge.
               </p>
             </ul>
           </div>

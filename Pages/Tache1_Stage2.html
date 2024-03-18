@@ -52,28 +52,26 @@
           <li><a href="/Pages/Organigramme.html">Organigramme</a></li>
           <li><a href="/Pages/Schéma.html"> Schéma réseau</a></li>
           <li class="dropdown"><a href="/Pages/Sommaire1.html"><span>Stage n°1</span> <i class="bi bi-chevron-down"></i>
-          </a>
-          <ul>
-            <li class="dropdown"><a href="#"><span>Mission</span> <i
-                  class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="Mission1_Stage1.html">Mission n°1</a></li>
-                <li><a href="Mission2_Stage1.html">Mission n°2</a></li>
-                <li><a href="Mission3_Stage1.html">Mission n°3</a></li>
-              </ul>
-            </li>
-            <li class="dropdown"><a href="#"><span>Taches</span> <i class="bi bi-chevron-down"></i></a>
-              <ul>
-                <li><a href="Tache1_Stage1.html">Tache n°1</a></li>
-              </ul>
-          </ul>
+            </a>
+            <ul>
+              <li class="dropdown"><a href="#"><span>Mission</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="Mission1_Stage1.html">Mission n°1</a></li>
+                  <li><a href="Mission2_Stage1.html">Mission n°2</a></li>
+                  <li><a href="Mission3_Stage1.html">Mission n°3</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#"><span>Taches</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="Tache1_Stage1.html">Tache n°1</a></li>
+                </ul>
+            </ul>
           </li>
           </li>
           <li class="dropdown">
             <a href="/Pages/Sommaire2.html"><span>Stage n°2</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown"><a href="#"><span>Mission</span> <i
-                    class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="#"><span>Mission</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="/Pages/Mission1_Stage2.html">Mission n°1</a></li>
                   <li><a href="/Pages/Mission2_Stage2.html">Mission n°2</a></li>
@@ -125,14 +123,20 @@
             <img src="/assets\img\portfolio\blog-maintenance-informatique.png" class="img-fluid" alt="" />
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
-            <h2>Aide des Soignants et Médecins</h2> <br>
-            <h5>Problématique: Les Soignants et Médecins ont différents problémes informatiques</h5> <br>
+            <h2>Installation de poste et formation d’utilisateur</h2> <br>
+            <h5>Problématique: Les personnels soignants avaient besoin de poste et de formation pour l'utilisation de leurs outils
+            </h5> <br>
             <ul>
               <h6>Réalisation: </h6>
               <p>
-                L'hôpital ne dispose pas de systéme de Ticketing je prenait toutes les demandes des diffèrentes collaborateurs par télephone. <br><br>
-                Quand ils ont un probléme lier a leur matériel, je me déplaçais directement pour aller régler le souci sur leur poste. <br>
-                Mais quand le souci venait de la partie software je me connectais à distance sur leurs ordinateurs grâce à l'application VNC.
+                La configuration du poste s’effectue au préalable grâce à des GPO, nous rajoutons l’ordinateur dans
+                notre AD puis le plaçons dans une OU spécifique qui sert à la configuration. <br>
+                Cette OU permet le déploiement des applications essentielles, c’est le tronc commun. <br>
+                Après nous la déplaçons dans son OU, cela permet de déployer cette fois ci les applications spécifiques au métier.<br>
+                Grace à cela, nous gagnons beaucoup de temps, car les applications qui sont déployées sont pour la
+                majorité déjà configurées et intègrent leur licence.<br><br>
+                Des séances de formation personnalisée on étaient organisées pour les cadres soignants afin de leurs
+                fournirs une maîtrise des outils informatiques indispensables à leurs fonctions.
               </p>
               </li>
             </ul>
@@ -146,15 +150,15 @@
 
   </main>
   <!-- End #main -->
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <!-- ======= Footer ======= -->
-  <footer id="footer"  data-aos-easing="ease-in-out" data-aos-duration="500">
+  <footer id="footer" data-aos-easing="ease-in-out" data-aos-duration="500">
     <div class="container">
       <div class="copyright">
         &copy; Copyright <strong><span>2024</span></strong>. All Rights Reserved
