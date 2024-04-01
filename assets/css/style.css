@@ -7,8 +7,28 @@
 */
 
 /*--------------------------------------------------------------
+# Table
+--------------------------------------------------------------*/
+
+table,
+caption,
+th,
+td {
+  border: 3px solid rgb(0, 0, 0);
+  border-collapse: collapse;
+  
+}
+
+caption,
+th,
+td {
+  padding: 8px;
+}
+
+/*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 .imagedefond {
   background-image: url("../../assets/img/Fond_Grenoble.png");
   background-color: grey;
@@ -132,15 +152,15 @@ h6,
   max-height: 40px;
 }
 
-.img_entreprise{
+.img_entreprise {
   border-radius: 10px;
 }
 
-.img_mission1_stage2{
+.img_mission1_stage2 {
   padding-top: 150px;
 }
 
-.img_CV{
+.img_CV {
   width: 50%;
   display: flex;
   justify-content: center;
@@ -585,8 +605,8 @@ h6,
 # Sections General
 --------------------------------------------------------------*/
 
-.color_sommaire{
-color: white;
+.color_sommaire {
+  color: white;
 }
 
 .slide_orga {
@@ -1001,7 +1021,7 @@ section {
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
-.about-color{
+.about-color {
   background-color: #948f8f75;
 }
 
